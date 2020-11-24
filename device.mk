@@ -66,7 +66,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    GoogleCameraGo
 
 # Device Settings
 PRODUCT_PACKAGES += \
