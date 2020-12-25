@@ -15,6 +15,9 @@ TARGET_GAPPS_ARCH := arm64
 # Boot animation resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# ANX Camera
+$(call inherit-product, vendor/ANXCamera/config.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := superior_surya
 PRODUCT_DEVICE := surya
