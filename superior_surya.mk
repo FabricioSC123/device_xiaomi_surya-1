@@ -27,5 +27,10 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+   PRIVATE_BUILD_DESC="walleye-user 8.1.0 OPM1.171019 011 4448085 release-keys" \
+
 PRODUCT_PROPERTY_OVERRIDES += \
-   ro.build.fingerprint=google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
+   ro.build.fingerprint=$(BUILD_FINGERPRINT)
