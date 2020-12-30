@@ -6,8 +6,8 @@
 
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# Inherit some common SuperiorOS stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common Xtended stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # GApps
 TARGET_GAPPS_ARCH := arm64
@@ -19,7 +19,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/ANXCamera/config.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := superior_surya
+PRODUCT_NAME := xtended_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3
@@ -34,3 +34,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
